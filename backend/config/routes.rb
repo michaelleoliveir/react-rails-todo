@@ -1,10 +1,17 @@
+# configurando a url da api
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  
+  # todas as rotas dentro deles terão o prefixo /api
+  namespace :api do
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
-  get "up" => "rails/health#show", as: :rails_health_check
+    # gera rotas automáticas para todos os recursos do to do (get, post, patch, delete)
+    resources :todos do
 
-  # Defines the root path route ("/")
-  # root "posts#index"
+      # gerando uma rota personalizada para o patch
+      member do
+        patch 'update_completed'
+      end
+    end
+  end
+
 end
