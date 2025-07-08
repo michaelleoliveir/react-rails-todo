@@ -7,8 +7,10 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
+    # somente o frontend que roda na porta localhost:3001 poderá acessar o backend
     origins "localhost:3001"
 
+    # todas as rotas da API estarão disponíveis
     resource "*",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
