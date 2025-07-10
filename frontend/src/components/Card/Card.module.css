@@ -1,0 +1,24 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0rem 0rem 2rem 0rem;
+    background-color: #888e9669;
+    padding: 0.3rem;
+    border-radius: 2rem;
+}
+
+.mainTitle {
+    color: #F4F6FA;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    text-transform: lowercase;
+}
+
+.subTitle {
+    margin-top: 0rem;
+    color: #b8b8b8;
+    font-size: 1rem;
+}

@@ -1,0 +1,22 @@
+.mainDisplay {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.mainTitle {
+    color: #F4F6FA;
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+
+.subTitle {
+    color: #888e96;
+    margin-top: 0.3rem;
+}
+
+.line {
+    width: 100%;
+    border: 0.1rem solid #888e9669;
+}
