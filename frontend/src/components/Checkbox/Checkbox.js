@@ -6,7 +6,7 @@ export const Checkbox = ({ id = 'checkbox-id' }) => {
             <input className={style.inpCbx} id={id} type="checkbox" />
             <label className={style.cbx} htmlFor={id}>
                 <span>
-                    <svg width="12px" height="9px" viewbox="0 0 12 9">
+                    <svg width="12px" height="9px" viewBox="0 0 12 9">
                         <polyline points="1 5 4 8 11 1"></polyline>
                     </svg>
                 </span>
