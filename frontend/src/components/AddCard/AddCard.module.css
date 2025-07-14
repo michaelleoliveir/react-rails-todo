@@ -66,13 +66,18 @@ textarea {
 
     background: none;
     border: none;
-    color: #b8b8b890;
+    color: #b8b8b8;
     font: inherit;
     outline: none;
 }
 
 .subTitle::placeholder {
-    color: #b8b8b890;
+    color: #b8b8b8;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 650px) {

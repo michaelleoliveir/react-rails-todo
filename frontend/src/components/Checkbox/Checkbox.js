@@ -1,9 +1,9 @@
 import style from "./Checkbox.module.css"
 
-export const Checkbox = ({ id = 'checkbox-id' }) => {
+export const Checkbox = ({ id = 'checkbox-id', checked, onClick }) => {
     return (
         <div className={style.checkboxWrapper}>
-            <input className={style.inpCbx} id={id} type="checkbox" />
+            <input className={style.inpCbx} id={id} type="checkbox" checked={checked} onClick={onClick} />
             <label className={style.cbx} htmlFor={id}>
                 <span>
                     <svg width="12px" height="9px" viewBox="0 0 12 9">
